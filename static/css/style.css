@@ -1,46 +1,248 @@
+/* navbar sec */
+.navbar {
+    background-color: #1094e0;
+    box-shadow:   #1094e0;
+}
+.navbar-nav .nav-link {
+    color: #f8f9fa;
+    font-weight: 500;
+    /* transition: color 0.3s ease-in-out; */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #033366;
+}
+
+.navbar-brand {
+    color: #f8f9fa;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: #f8f9fa;
+}
+
+.nav-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Styling for active link */
+.nav-item.active .nav-link {
+    color:  #033366;
+}
+
+/* Responsive navbar */
+@media (max-width: 768px) {
+    .navbar-nav {
+        background-color: #1094e0;
+        position: absolute;
+        top: 56px;
+        width: 100%;
+        left: 0;
+    }
+}
+.main{
+    position: relative;
+  }
+  .main img{
+    width: 100%;
+    /* position: fixed; */
+  }
+  .profile{
+    position: absolute;
+    left: 20%;
+    text-align: center;
+    top: 20%;
+  }
+  .dtls h1:hover {
+    color:#b82035;
+  }
+  .profile h2:hover {
+    color:#b82035;
+  }
+  .dtls{
+    position: absolute;
+    width: 400px;
+  }
+  .head {
+display: inline;
+gap: 5px; 
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.head-items {
+display: inline-block;
+padding: 15px;
+left: 10px;
+}
+
+.head-items svg {
+width: 24px; 
+height: 24px; 
+transition: transform 0.3s ease; 
+}
+
+.head-items svg:hover {
+transform: scale(1.2); 
+color: #b82035;
+}
+.pro-pic{
+border-radius: 10px;
+padding-bottom: 10px;
+}
+/* About Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+font-family: 'Arial', sans-serif;
+background-color: #f4f7fc;
+color: #333;
+margin: 0;
+padding: 0;
 }
 
 h1 {
-    text-align: center;
-    padding: 20px;
+font-size: 3rem;
+margin-bottom: 1rem;
 }
 
-form {
-    width: 60%;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+p {
+font-size: 1.1rem;
+line-height: 1.8;
+margin-bottom: 1.5rem;
 }
 
-label {
-    display: block;
-    margin: 10px 0 5px;
+.btn {
+transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-input, textarea {
+/* Header section */
+h1.mb-3 {
+color: #e70c0c; 
+font-weight: bold;
+}
+
+/* Paragraph styles */
+.lead {
+font-size: 1.2rem;
+margin-bottom: 20px;
+color: #555;
+}
+
+/* Badge styles */
+.badge {
+margin-right: 8px;
+background-color: #444;
+color: #fff;
+padding: 6px 12px;
+border-radius: 30px;
+font-size: 0.9rem;
+transition: transform 0.3s ease;
+}
+
+.badge.bg-dark {
+background-color: #4e4e4e;
+}
+
+/* Hover effects for badges */
+.badge:hover {
+transform: scale(1.1);
+}
+
+/* Button styles */
+.btn-primary {
+background-color: #044b1fd3;
+border: none;
+color: white;
+font-size: 1.1rem;
+padding: 15px 30px;
+border-radius: 50px;
+text-transform: uppercase;
+}
+
+.btn-primary:hover {
+background-color: #7e0515f5;
+transform: translateY(-5px);
+}
+
+.btn-primary:active {
+transform: translateY(0);
+}
+
+/* Container for the About section */
+.col-lg-8 {
+max-width: 850px;
+margin: auto;
+padding: 2rem;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mb-3 {
+margin-bottom: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+.col-lg-8 {
+    padding: 1rem;
+}
+
+.btn-primary {
     width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 12px;
+}
+}
+/* Education Section */
+.education-section {
+    padding: 50px 20px;
+    background-color: #f4f7fc; /* Light background */
+    text-align: center;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #4CAF50;
+.section-title {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Container for education items */
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+/* .education-info {
+    padding: 20px;
+    border-radius: 2px;
+    background-color: #ff0037; 
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+} */
+.education-item:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
+/* Responsive design */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column; /* Stacks the items on smaller screens */
+        align-items: center;
+    }
 
-button:hover {
-    background-color: #45a049;
+    .education-item {
+        width: 100%; /* Ensures full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
 }
+/* skills sections */
+
+
