@@ -245,6 +245,152 @@ margin-bottom: 30px;
 }
 /* skills sections */
 #skills .col-md-3 i {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+#skills {
+  background-color: #f4f4f4;
+}
+
+.skill-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+}
+
+.skill-icon img {
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.skill-icon img:hover {
+  transform: scale(1.1);
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .col-md-3 {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
+
+/* projects section */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Projects Section */
+#projects {
+  background-color: #ffffff;
+  padding: 60px 0;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: #333333;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+  position: relative;
+}
+
+#projects h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555555;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  #projects h2 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-img-top {
+    height: 120px;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+/* #skills .col-md-3 i {
     font-size: 2rem;
     color: #007bff;
   }
@@ -284,4 +430,4 @@ margin-bottom: 30px;
     }
   }
   
-
+ */

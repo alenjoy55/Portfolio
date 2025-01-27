@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'pkdeepakachu123@gmail.com'
-app.config['MAIL_PASSWORD'] = 'ypye ggic rpjr hngj'
+app.config['MAIL_USERNAME'] = 'alen85292@gmail.com'
+app.config['MAIL_PASSWORD'] = 'alen@1234'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 
@@ -22,7 +22,7 @@ def send_message():
     name=request.form['name']
     email=request.form['email']
     message=request.form['message']
-    msg = Message(subject='From Portfolio', sender=email, recipients=['pkdeepakachu123@gmail.com'])
+    msg = Message(subject='From Portfolio', sender=email, recipients=['alen85292@gmail.com'])
     msg.body = f"From: {name}\n {email}\n\nMessage:\n{message}"
     mail.send(msg)
     return render_template('index.html', success=True)
