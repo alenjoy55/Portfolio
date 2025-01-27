@@ -71,7 +71,7 @@
             <div class="container mt-5 mb-4" id="about">
               <div class="row align-items-center">
                   <div class="col-lg-4 text-center">
-                      <img src="{{ url_for('static',filename='img/')}}" 
+                      <img src="{{ url_for('static',filename='img/profile.jpg')}}" 
                            alt="Profile Picture" 
                            class="pro-pic img-fluid rounded-circle shadow-lg"
                            style="width: 290px; height: auto;">
@@ -164,43 +164,43 @@
       </div>
       <div class="col-md-3 col-sm-6 skill-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         <div class="skill-icon">
-          <img src="{{ url_for('static',filename='img/')}}" alt="Bootstrap" class="img-fluid mb-2">
+          <img src="{{ url_for('static',filename='img/bootstrap.jpeg')}}" alt="Bootstrap" class="img-fluid mb-2">
         </div>
         <p class="skill-name">Bootstrap</p>
       </div>
       <div class="col-md-3 col-sm-6 skill-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
         <div class="skill-icon">
-          <img src="{{ url_for('static',filename='img/')}}" alt="JavaScript" class="img-fluid mb-2">
+          <img src="{{ url_for('static',filename='img/js.webp')}}" alt="JavaScript" class="img-fluid mb-2">
         </div>
         <p class="skill-name">JavaScript</p>
       </div>
       <div class="col-md-3 col-sm-6 skill-card" data-aos="fade-up" data-aos-duration="1500">
         <div class="skill-icon">
-          <img src="{{ url_for('static',filename='img/')}}" alt="Python" class="img-fluid mb-2">
+          <img src="{{ url_for('static',filename='img/python.webp')}}" alt="Python" class="img-fluid mb-2">
         </div>
         <p class="skill-name">Python</p>
       </div>
       <div class="col-md-3 col-sm-6 skill-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
         <div class="skill-icon">
-          <img src="{{ url_for('static',filename='img/')}}" alt="Django" class="img-fluid mb-2">
+          <img src="{{ url_for('static',filename='img/django.webp')}}" alt="Django" class="img-fluid mb-2">
         </div>
         <p class="skill-name">Django</p>
       </div>
       <div class="col-md-3 col-sm-6 skill-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         <div class="skill-icon">
-          <img src="{{ url_for('static',filename='img/')}}" alt="React" class="img-fluid mb-2">
+          <img src="{{ url_for('static',filename='img/react.webp')}}" alt="React" class="img-fluid mb-2">
         </div>
         <p class="skill-name">React</p>
       </div>
       <div class="col-md-3 col-sm-6 skill-card" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
         <div class="skill-icon">
-          <img src="{{ url_for('static',filename='img/')}}" alt="Flask" class="img-fluid mb-2">
+          <img src="{{ url_for('static',filename='img/flask.jpg')}}" alt="Flask" class="img-fluid mb-2">
         </div>
         <p class="skill-name">Flask</p>
       </div>
       <div class="col-md-3 col-sm-6 skill-card" data-aos="fade-up" data-aos-duration="1500">
         <div class="skill-icon">
-          <img src="{{ url_for('static',filename='img/')}}" alt="MySQL" class="img-fluid mb-2">
+          <img src="{{ url_for('static',filename='img/mysql.png')}}" alt="MySQL" class="img-fluid mb-2">
         </div>
         <p class="skill-name">MySQL</p>
       </div>
@@ -241,6 +241,53 @@
       </div>
   </div>
 </section>
+<section id="contact" class="bg-dark text-white py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <form action="/send_mail" method="POST" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container">
+      <p>&copy; 2025 Alenjoy . All rights reserved.</p>
+      <p class="bi bi-envelope me-3">  alen85292@gmail.com</p>
+      <div class="social-icons mt-3">
+          <!-- <a href="https://www.linkedin.com/in/your-profile" target="blank" class="text-white me-3" title="LinkedIn">
+              <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+          </a> -->
+          <a href="https://github.com/alenjoy55" target="blank" class="text-white me-3" title="GitHub">
+              <i class="bi bi-github" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="https://wa.me/9605118338" target="blank" class="text-white me-3" title="GitHub">
+            <i class="bi bi-whatsapp" style="font-size: 1.5rem;"></i>
+        </a>
+          <a href="https://www.instagram.com/4len_k_joy" target="blank" class="text-white me-3" title="Instagram">
+            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="https://twitter.com/your-profile" target="blank" class="text-white me-3" title="Twitter">
+              <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+          </a>
+          
+          
+      </div>
+  </div>
+</footer>
+
 
            
 </body>

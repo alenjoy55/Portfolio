@@ -244,5 +244,44 @@ margin-bottom: 30px;
     }
 }
 /* skills sections */
-
+#skills .col-md-3 i {
+    font-size: 2rem;
+    color: #007bff;
+  }
+  
+  #skills {
+    background-color: #f4f4f4;
+  }
+  
+  .skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .skill-icon img {
+    height: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-icon img:hover {
+    transform: scale(1.1);
+  }
+  
+  .skill-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-3 {
+      width: 100% !important;
+      margin-bottom: 20px;
+    }
+  }
+  
 
