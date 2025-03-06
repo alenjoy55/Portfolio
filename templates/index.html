@@ -19,9 +19,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#about">About Me</a>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Resume</a>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="#education">Education</a>
               </li>    
@@ -104,7 +104,21 @@
                 Let's build something amazing together!
             </p>
             <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact Me</a>
-            <a href="" class="btn btn-primary btn-lg mt-3">Resume</a>
+            <a href="" class="btn btn-primary btn-lg mt-3" data-bs-toggle="modal" data-bs-target="#resume">Resume</a>
+
+            <div class="modal fade" id="resume" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">My Resume</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                          <iframe src="{{ url_for('static', filename='file/Alenjoy_cv.pdf') }}" width="100%" height="500px"></iframe>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
     </div>
   </div>
